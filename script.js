@@ -4,7 +4,7 @@ const cityName = document.querySelector('.city');
 const icoContainer = document.querySelector('#icon');
 const searchBtn = document.querySelector('.search');
 
-let weatherIco = document.createElement('img');
+let weatherIco = document.createElement('div');
 let weatherInfo = document.createElement('p');
 const apiKey = '863b6e91ca2facf75f44510958c05ff5';
 
@@ -31,7 +31,7 @@ function setData(data) {
     // Setto il nome della città
     cityName.innerText = name;
     // Setto descrizione e indicazione meteo
-    weatherIco.setAttribute('src', `http://openweathermap.org/img/w/${iconCode}.png`);
+    weatherIco.innerHTML = `<i class="owf owf-${data.weather[0].id} owf-3x"></i>`;
 
     weatherInfo.innerHTML = `<p><b>${data.weather[0].description}</b></p>`;
 

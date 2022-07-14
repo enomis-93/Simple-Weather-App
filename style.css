@@ -5,10 +5,13 @@
 }
 
 body {
-    background: linear-gradient(rgb(85, 85, 85), rgb(31, 31, 31));
+    background: rgb(70, 70, 70);
     font-family: 'Fira Sans', sans-serif;
     font-family: 'Open Sans', sans-serif;
     color: white;
+    display: flex;
+    width: 100vw;
+    height: 100vw;
 }
 
 .container {
@@ -17,8 +20,6 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    width: 80vw;
-    height: 100vw;
 }
 /* Card */
 .card {
